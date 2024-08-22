@@ -13,12 +13,11 @@ function App() {
   return (
     <>
       <h1>Motion Number Demo</h1>
-      <button onClick={handleIncrease}>Increase</button>
-      <p style={{ fontSize: 50, marginTop: 10 }}>
-        <MotionNumber
-          value={count}
-          format={{ notation: 'compact' }} />
-      </p>
+      <button style={{ display: 'block' }} onClick={handleIncrease}>Increase</button>
+      <MotionNumber
+        style={{ fontSize: 50, marginTop: 10 }}
+        value={count}
+        format={{ notation: 'compact' }} />
     </>
   )
 }
